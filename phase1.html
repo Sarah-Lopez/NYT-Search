@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>NYT Search</title>
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New York Times</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-
 <body>
-    
-   <header>
-       <div class="jumbotron text-center">
-           <h1 class="tittle-game" id="wrapper">New York Times</h1>
-       </div>
-   </header>
-
-   <div class="card">
-       <h5 class="card-header">Search Parameters</h5>
-       <div class="row">
-           <div class="col-md-12">
-               <div class="card-body">
-                   <p class="card-text" id="searchTerm">Search Term:</p>
-                   <div id="subwrapper">
-                   <button>Start</button>
-                   </div>
-               </div>
-           </div>
-       </div>
-
-   </div>
-
-   <!--jQuery stuff-->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-   <!--Main game logic-->
-   <script src="script.js"></script>
+    <header>
+        <div class="jumbotron text-center">
+            <h1 class="tittle-game" id="wrapper">New York Times</h1>
+        </div>
+    </header>
+    <div class="card">
+        <h5 class="card-header">Search Parameters</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-body">
+                    <p class="card-text" id="searchTerm">Search Term:</p>
+                    <div id="subwrapper">
+                        <div class="input-group add-on">
+                            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term"
+                                type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <p class="card-text">Number of Records to Retreive:</p>
+                        <select type="button" class="form-control">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-body">
+                <p class="card-text" id="searchTerm">Start Year (Optional):</p>
+                <div id="subwrapper">
+                    <div class="input-group add-on">
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-body">
+                <p class="card-text" id="searchTerm">End Year (Optional):</p>
+                <div id="subwrapper">
+                    <div class="input-group add-on">
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--jQuery stuff-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--Main game logic-->
+    <script src="script.js"></script>
 </body>
-
 </html>
